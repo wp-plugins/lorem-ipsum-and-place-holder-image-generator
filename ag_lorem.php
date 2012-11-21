@@ -41,7 +41,7 @@ function ag_placehold_func($atts) {
 extract( shortcode_atts( array(
                 'size' => '100x100',
                 'fill' => 'CCCCCC',
-		'type' => '.gif',
+		'type' => 'gif',
 		'words' => '',
                 'text' => 'FFFFFF'
                 ), $atts ) );
@@ -49,7 +49,7 @@ if ($words != '') {
 $txt = str_replace(' ', '+', $words);
 $imgurl = "http://placehold.it/$size.$type/$fill/$text&text=$txt";
 } else {
-$imgurl = "http:/placehold.it/$size.$type/$fill/$text/";
+$imgurl = "http://placehold.it/$size.$type/$fill/$text/";
 }
 $html = '<img src="'.$imgurl.'">';
 
