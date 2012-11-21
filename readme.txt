@@ -48,7 +48,7 @@ Here is an example:
 
 [placeholder size="200x200" fill="CCCCCC" text="FFFFFF" words="Hello Wordpress!" type="png"]
 
-<img src="http://placehold.it/200x200/CCCCCC/FFFFFF.png&text=Hello+Wordpress!"/>
+<a href="http://placehold.it/200x200/CCCCCC/FFFFFF.png&text=Hello+Wordpress!">http://placehold.it/200x200/CCCCCC/FFFFFF.png&text=Hello+Wordpress!</a>
 
 == Installation ==
 
