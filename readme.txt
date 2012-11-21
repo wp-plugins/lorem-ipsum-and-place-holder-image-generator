@@ -67,7 +67,9 @@ Awesome! Submit it via the "Support" tab and I'll be sure to answer you.
 
 
 == Changelog ==
+
 = 0.2 =
 Updated the placeholder shortcode to allow for text and file types
+
 = 0.1 =
 The first release. Tested and works. 
