@@ -16,7 +16,7 @@ I'm not sure when you will ever need to use it but here are two simple to use sh
 The shortcode [loremipsum] uses <a href="http://loripsum.net"> loripsum.net</a> API. It is easy to set the options as well.
 Add the paragraph attribute to change how many paragraphs are displayed, the length attribute changes the average length (short, medium, long or verylong) and the options attribute allows you to list any of the other options (seperated by '/').
 Here is the break down of the availible options:
-
+ 
 <ul>
             
             
