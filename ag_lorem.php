@@ -4,7 +4,7 @@
 Plugin Name: Lorem Ipsum and Place Holder Image Generators
 Plugin URI: http://bythegram.ca
 Description: Two simple shortcodes to generate Lorem Ipsum and Place Holder Images in your posts using loripsum.net and placeholder.it API
-Version: 0.1
+Version: 0.2
 Author: Adam Graham
 Author URI: http://bythegram.ca
 License: GPL2
@@ -41,9 +41,16 @@ function ag_placehold_func($atts) {
 extract( shortcode_atts( array(
                 'size' => '100x100',
                 'fill' => 'CCCCCC',
+		'type' => '.gif',
+		'words' => '',
                 'text' => 'FFFFFF'
                 ), $atts ) );
-$imgurl = "http://placehold.it/$size/$fill/$text";
+if ($words != '') {
+$txt = str_replace(' ', '+', $words);
+$imgurl = "http://placehold.it/$size.$type/$fill/$text&text=$txt";
+} else {
+$imgurl = "http:/placehold.it/$size.$type/$fill/$text/";
+}
 $html = '<img src="'.$imgurl.'">';
 
 return $html;
