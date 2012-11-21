@@ -4,7 +4,7 @@ Donate link: http://bythegram.ca
 Tags: lorem Ipsum, shortcode, 
 Requires at least: 3.0.1
 Tested up to: 3.4
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,7 +40,15 @@ An example of the shortcode with some of the options:
 
 This will generate this content <a href="http://loripsum.net/api/3/long/decorate/link/code">http://loripsum.net/api/3/long/decorate/link/code</a>
 
-The [placeholder] shortcode will generate an image from <a href="http://placehold.it">placehold.it</a>. Add the size attribute to choose your size (100x100 is the default), the fill and text attributes will take HEX colors.
+The [placeholder] shortcode will generate an image from <a href="http://placehold.it">placehold.it</a>. Add the size attribute to choose your size 
+(100x100 is the default), the fill and text attributes will take HEX colors. You can also choose the file type (png, jpg, jpeg or gif, gif is the 
+default) as well as change the words inside the image (the size is the default). 
+
+Here is an example:
+
+[placeholder size="200x200" fill="CCCCCC" text="FFFFFF" words="Hello Wordpress!" type="png"]
+
+<img src="http://placehold.it/200x200/CCCCCC/FFFFFF.png&text=Hello+Wordpress!"/>
 
 == Installation ==
 
@@ -59,6 +67,7 @@ Awesome! Submit it via the "Support" tab and I'll be sure to answer you.
 
 
 == Changelog ==
-
-= 1.0 =
+= 0.2 =
+Updated the placeholder shortcode to allow for text and file types
+= 0.1 =
 The first release. Tested and works. 
